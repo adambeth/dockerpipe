@@ -35,6 +35,4 @@ jobs:
         image: mongo
         ports:
           - "27017:27017"
-    steps:
-      - name: post-urls
-        run: ping http://localhost:3001/api/user
+
