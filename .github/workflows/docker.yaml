@@ -18,7 +18,7 @@ jobs:
       - name: step with docker
         uses: docker://node:latest
         with: 
-          entrypoint: ./script.sh
+          entrypoint: script.sh
           args: 'bitch tits'
       - name: step with docker
         uses: docker://node:latest
