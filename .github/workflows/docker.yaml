@@ -14,6 +14,7 @@ jobs:
         with: 
           entrypoint: '/bin/echo'
           args: 'hello world'
+      - uses: actions/checkout@v1
       - name: step with docker
         uses: docker://node:latest
         with: 
