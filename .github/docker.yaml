@@ -1,0 +1,18 @@
+name: Docker Infra
+on: push
+
+jobs:
+  deploy-app-docker:
+  runs-on: ubuntu-latest
+  services:
+  app: 
+    image: alialaa17/node-api
+    ports:
+      - 3001:3000
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+  steps:
+    - name: post a url request 
+      run: ping http://localhost:3001/api/user
